@@ -22,7 +22,9 @@ const {
   POLYGON_DEPLOY_KEY,
   POLYGON_URL,
   MAINNET_URL,
-  MAINNET_DEPLOY_KEY
+  MAINNET_DEPLOY_KEY,
+  WORLDCHAIN_URL,
+  WORLDCHAIN_DEPLOY_KEY
 } = require("./env.json")
 
 const getEnvAccounts = (DEFAULT_DEPLOYER_KEY) => {
@@ -71,6 +73,11 @@ module.exports = {
   networks: {
     localhost: {
       timeout: 120000
+    },
+    worldchain: {
+      url: WORLDCHAIN_URL,
+      chainId: 480,                         // World Chain's correct chainId
+      accounts: [WORLDCHAIN_DEPLOY_KEY] // Use direct key reference
     },
     hardhat: {
       allowUnlimitedContractSize: true

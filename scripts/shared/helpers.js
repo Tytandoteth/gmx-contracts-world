@@ -6,22 +6,27 @@ const network = (process.env.HARDHAT_NETWORK || 'mainnet');
 
 const ARBITRUM = 42161
 const AVALANCHE = 43114
+const WORLDCHAIN = 480 // World Chain ID
 
 const {
   ARBITRUM_URL,
   AVAX_URL,
+  WORLDCHAIN_URL,
   ARBITRUM_DEPLOY_KEY,
-  AVAX_DEPLOY_KEY
+  AVAX_DEPLOY_KEY,
+  WORLDCHAIN_DEPLOY_KEY
 } = require("../../env.json")
 
 const providers = {
   arbitrum: new ethers.providers.JsonRpcProvider(ARBITRUM_URL),
-  avax: new ethers.providers.JsonRpcProvider(AVAX_URL)
+  avax: new ethers.providers.JsonRpcProvider(AVAX_URL),
+  worldchain: new ethers.providers.JsonRpcProvider(WORLDCHAIN_URL)
 }
 
 const signers = {
   arbitrum: new ethers.Wallet(ARBITRUM_DEPLOY_KEY).connect(providers.arbitrum),
-  avax: new ethers.Wallet(ARBITRUM_DEPLOY_KEY).connect(providers.avax)
+  avax: new ethers.Wallet(AVAX_DEPLOY_KEY).connect(providers.avax),
+  worldchain: new ethers.Wallet(WORLDCHAIN_DEPLOY_KEY.startsWith('0x') ? WORLDCHAIN_DEPLOY_KEY : '0x' + WORLDCHAIN_DEPLOY_KEY).connect(providers.worldchain)
 }
 
 function sleep(ms) {
@@ -49,6 +54,10 @@ function getChainId(network) {
 
   if (network === "avax") {
     return 43114
+  }
+  
+  if (network === "worldchain") {
+    return 480
   }
 
   throw new Error("Unsupported network")
@@ -182,6 +191,7 @@ async function updateTokensPerInterval(distributor, tokensPerInterval, label) {
 module.exports = {
   ARBITRUM,
   AVALANCHE,
+  WORLDCHAIN,
   providers,
   signers,
   readCsv,
