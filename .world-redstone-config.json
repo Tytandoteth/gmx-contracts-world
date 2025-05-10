@@ -1,0 +1,37 @@
+{
+  "vaultPriceFeedAddress": "0x27f97f1331Abe2253C16c52c84a93717Ca7AcEae",
+  "redStonePriceFeedAddress": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+  "tokens": {
+    "WLD": {
+      "address": "0x163f8C2467924be0ae7B5347228CABF260318753",
+      "priceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+      "priceDecimals": 8,
+      "isStableToken": false
+    },
+    "ETH": {
+      "address": "0x47C031236e19D024b42F8Ae6780e44a573170702",
+      "priceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+      "priceDecimals": 8,
+      "isStableToken": false
+    },
+    "BTC": {
+      "address": "0x6853EA96fF216Fab11D2D930CE3c508556a4BDC3",
+      "priceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+      "priceDecimals": 8,
+      "isStableToken": false
+    },
+    "USDC": {
+      "address": "0x09400d9DB990d5ed3f35D7BE61dfAEB900aF03c8",
+      "priceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+      "priceDecimals": 8,
+      "isStableToken": true
+    },
+    "USDT": {
+      "address": "0xe6D222CAaB2842D70F9Ce058c9316B5C936E2949",
+      "priceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+      "priceDecimals": 8,
+      "isStableToken": true
+    }
+  },
+  "timestamp": "2025-05-10T14:12:41.338Z"
+}

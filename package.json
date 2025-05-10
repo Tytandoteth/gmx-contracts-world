@@ -30,6 +30,7 @@
     "typechain": "^5.1.2"
   },
   "dependencies": {
+    "@redstone-finance/evm-connector": "^0.8.0",
     "@redstone-finance/sdk": "^0.8.0",
     "@synapseprotocol/sdk": "^0.94.1",
     "@uniswap/sdk-core": "^3.0.1",

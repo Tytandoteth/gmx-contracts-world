@@ -1,0 +1,13 @@
+{
+  "redStonePriceFeed": "0x5C09c03A3f82CfE7EE5224F92b34fE07e7f8AFB9",
+  "network": "worldchain",
+  "deployer": "0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF",
+  "tokens": [
+    "WLD",
+    "ETH",
+    "BTC",
+    "USDC",
+    "USDT"
+  ],
+  "timestamp": "2025-05-10T14:08:12.802Z"
+}
