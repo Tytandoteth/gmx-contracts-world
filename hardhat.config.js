@@ -70,6 +70,22 @@ task("distributeFees", "Distribute fees")
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
+  etherscan: {
+    apiKey: {
+      // World Chain explorer (worldscan.org)
+      worldchain: ""
+    },
+    customChains: [
+      {
+        network: "worldchain",
+        chainId: 480,
+        urls: {
+          apiURL: "https://api.worldscan.org/api",
+          browserURL: "https://worldscan.org"
+        }
+      }
+    ]
+  },
   networks: {
     localhost: {
       timeout: 120000

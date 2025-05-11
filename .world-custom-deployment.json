@@ -15,5 +15,79 @@
   "CustomShortsTracker": "0x22CCf3C6a4370A097FbDF6a44e4DaC392a6c0bf9",
   "CustomOrderBook": "0x8179D468fF072B8A9203A293a37ef70EdCA850fc",
   "CustomPositionRouter": "0x566e66c17a6DfE5B0964fA0AFC85cF3cc5963dAF",
-  "CustomPositionManager": "0x0AC8566466e68678d2d32F625d2d3CD9e6cf088D"
+  "CustomPositionManager": "0x0AC8566466e68678d2d32F625d2d3CD9e6cf088D",
+  "SimplePriceFeed": "0xf63caB0D3aB8a3593f0Ed6b2a46Cd4dF45E4B05b",
+  "TestDeployment": {
+    "tokens": {
+      "TUSD": {
+        "address": "0xc99E5FC1A556bD42A6dAff82Fb585814E41431dc",
+        "decimals": 18,
+        "initialSupply": "1000000000000000000000000"
+      },
+      "TBTC": {
+        "address": "0x0d84b9be12240Ee0BDFacbE0378DAd3810bC37a8",
+        "decimals": 8,
+        "initialSupply": "100000000000"
+      },
+      "TETH": {
+        "address": "0x38CC615b73092e145cb38795C91180Ac5a8700E1",
+        "decimals": 18,
+        "initialSupply": "10000000000000000000000"
+      }
+    },
+    "priceFeeds": {
+      "TUSD": {
+        "address": "0xd3258F489a3f987c7F5245983e2Db152A9F95730",
+        "price": "100000000"
+      },
+      "TBTC": {
+        "address": "0x8ff014C78B895C03Fd4D964A58b4Fd19aD29CD09",
+        "price": "3000000000000"
+      },
+      "TETH": {
+        "address": "0x3b6FBddd0BEf5fEe227f071B11d24F0d41BF67D7",
+        "price": "250000000000"
+      }
+    }
+  },
+  "TestEnvironment": {
+    "tokens": {
+      "TUSD": {
+        "address": "0xc1f17FB5db2A71617840eCe29c241997448f6720",
+        "decimals": 18,
+        "initialSupply": "1000000000000000000000000"
+      },
+      "TBTC": {
+        "address": "0x9cdee0fb64c18d3af7C8cB30Aada5f7fe90aF553",
+        "decimals": 8,
+        "initialSupply": "100000000000"
+      },
+      "TETH": {
+        "address": "0xE9298442418B800105b86953db930659e5b13058",
+        "decimals": 18,
+        "initialSupply": "10000000000000000000000"
+      }
+    },
+    "priceFeeds": {
+      "TUSD": {
+        "address": "0x7CB3433b1079e25836733640618F0946C3D9E089",
+        "price": "100000000"
+      },
+      "TBTC": {
+        "address": "0x1e3e029dF81cc5C10Dca70EE322888Ab542B7fD6",
+        "price": "3000000000000"
+      },
+      "TETH": {
+        "address": "0x680888857bFB0b459fc41Edd16fBD8aB361490C5",
+        "price": "250000000000"
+      }
+    },
+    "contracts": {
+      "SimplePriceFeed": "0xa19F571B0B00A36028Ce47721AFa1395Bb581E5d",
+      "Vault": "0x6519E08ecC9B2763FbEf360132a8303dc2E9ccE5",
+      "Router": "0x1958F6Cba8eb87902bDc1805A2a3bD5842BE645b",
+      "PositionRouter": "0x566e66c17a6DfE5B0964fA0AFC85cF3cc5963dAF",
+      "OrderBook": "0x8179D468fF072B8A9203A293a37ef70EdCA850fc"
+    }
+  }
 }
