@@ -1,0 +1,225 @@
+{
+  "passed": 30,
+  "failed": 0,
+  "warnings": 4,
+  "details": {
+    "Contract Code Verification": [
+      {
+        "status": "PASSED",
+        "message": "WLD Token at 0x99A49AaA79b648ee24e85c4eb3A1C9c429A95652 has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "WWORLD Token at 0xE1a9E792851b22A808639cf8e75D0A4025333f4B has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultPriceFeed at 0x8727D91C1174b4ab7CfD5780296aAE8Ef4b0E6Bf has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "RedStonePriceFeed at 0xA63636C9d557793234dD5E33a24EAd68c36Df148 has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Vault at 0x6519E08ecC9B2763FbEf360132a8303dc2E9ccE5 has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "USDG at 0xB1AfC10073a6C05a3c79ac051deFaa1C83DcEFAf has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Router at 0x1958F6Cba8eb87902bDc1805A2a3bD5842BE645b has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultUtils at 0x26eCCeBB6E82210dc4dD3134ab2ded1AB78a5345 has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "WLD MockPriceFeed at 0x38ad5c1D52717A7EC0a3eed6a4D225dC6F4C013F has contract code",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "WWORLD MockPriceFeed at 0xC68db378A113822c48DB063A2717A426aFf79D87 has contract code",
+        "details": null
+      }
+    ],
+    "Token Verification": [
+      {
+        "status": "PASSED",
+        "message": "WLD token verified",
+        "details": {
+          "symbol": "WLD",
+          "name": "WLD Token",
+          "decimals": "18",
+          "totalSupply": "1000000.0"
+        }
+      },
+      {
+        "status": "PASSED",
+        "message": "WWORLD token verified",
+        "details": {
+          "symbol": "WWORLD",
+          "name": "WWORLD Token",
+          "decimals": "18",
+          "totalSupply": "1000000.0"
+        }
+      },
+      {
+        "status": "PASSED",
+        "message": "USDG token verified",
+        "details": {
+          "symbol": "USDG",
+          "name": "USD Gambit",
+          "decimals": "18",
+          "totalSupply": "0.0"
+        }
+      }
+    ],
+    "Contract Connections": [
+      {
+        "status": "PASSED",
+        "message": "Vault is connected to VaultPriceFeed (0x8727D91C1174b4ab7CfD5780296aAE8Ef4b0E6Bf)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Vault is connected to Router (0x1958F6Cba8eb87902bDc1805A2a3bD5842BE645b)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Vault is connected to USDG (0xB1AfC10073a6C05a3c79ac051deFaa1C83DcEFAf)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Vault is connected to VaultUtils (0x26eCCeBB6E82210dc4dD3134ab2ded1AB78a5345)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Router is connected to Vault (0x6519E08ecC9B2763FbEf360132a8303dc2E9ccE5)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Router is connected to USDG (0xB1AfC10073a6C05a3c79ac051deFaa1C83DcEFAf)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultUtils is connected to Vault (0x6519E08ecC9B2763FbEf360132a8303dc2E9ccE5)",
+        "details": null
+      }
+    ],
+    "Price Feed Configuration": [
+      {
+        "status": "PASSED",
+        "message": "VaultPriceFeed has price feed for WLD",
+        "details": {
+          "configuredPriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148"
+        }
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultPriceFeed has price feed for WWORLD",
+        "details": {
+          "configuredPriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148"
+        }
+      },
+      {
+        "status": "WARNING",
+        "message": "WLD is using RedStonePriceFeed",
+        "details": {
+          "currentPriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148",
+          "redStonePriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148",
+          "mockPriceFeed": "0x38ad5c1D52717A7EC0a3eed6a4D225dC6F4C013F"
+        }
+      },
+      {
+        "status": "WARNING",
+        "message": "WWORLD is using RedStonePriceFeed",
+        "details": {
+          "currentPriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148",
+          "redStonePriceFeed": "0xA63636C9d557793234dD5E33a24EAd68c36Df148",
+          "mockPriceFeed": "0xC68db378A113822c48DB063A2717A426aFf79D87"
+        }
+      }
+    ],
+    "Contract Ownership": [
+      {
+        "status": "PASSED",
+        "message": "Vault is owned by deployer (0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultPriceFeed is owned by deployer (0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "Router is owned by deployer (0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "VaultUtils is owned by deployer (0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF)",
+        "details": null
+      },
+      {
+        "status": "PASSED",
+        "message": "RedStonePriceFeed is owned by deployer (0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF)",
+        "details": null
+      }
+    ],
+    "Price Feed Functionality": [
+      {
+        "status": "PASSED",
+        "message": "Got WLD price from MockPriceFeed: 10000000000000000000000.0 USD",
+        "details": null
+      },
+      {
+        "status": "WARNING",
+        "message": "Cannot get WLD price through VaultPriceFeed directly: missing revert data in call exception; Transaction reverted without a reason string [ See: https://links.ethers.org/v5-errors-CALL_EXCEPTION ] (data=\"0x\", transaction={\"from\":\"0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF\",\"to\":\"0x8727D91C1174b4ab7CfD5780296aAE8Ef4b0E6Bf\",\"data\":\"0x2fc3a70a00000000000000000000000099a49aaa79b648ee24e85c4eb3a1c9c429a95652000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000\",\"accessList\":null}, error={\"name\":\"ProviderError\",\"_stack\":\"ProviderError: HttpProviderError\\n    at HttpProvider.request (/Users/tyblackard/Documents/Windsurf/gmx-contracts-world/node_modules/hardhat/src/internal/core/providers/http.ts:78:19)\\n    at LocalAccountsProvider.request (/Users/tyblackard/Documents/Windsurf/gmx-contracts-world/node_modules/hardhat/src/internal/core/providers/accounts.ts:187:34)\\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at EthersProviderWrapper.send (/Users/tyblackard/Documents/Windsurf/gmx-contracts-world/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)\",\"code\":-32000,\"_isProviderError\":true}, code=CALL_EXCEPTION, version=providers/5.8.0)",
+        "details": {
+          "note": "This is expected with RedStonePriceFeed without proper transaction wrapping"
+        }
+      }
+    ],
+    "Vault Initialization": [
+      {
+        "status": "PASSED",
+        "message": "Vault is initialized",
+        "details": null
+      }
+    ],
+    "RedStonePriceFeed Configuration": [
+      {
+        "status": "PASSED",
+        "message": "RedStonePriceFeed configuration verified",
+        "details": {
+          "dataServiceId": "redstone-primary-prod",
+          "uniqueSignersThreshold": "1"
+        }
+      },
+      {
+        "status": "WARNING",
+        "message": "RedStonePriceFeed uniqueSignersThreshold is set to 1, which is good for testing but should be higher for production",
+        "details": null
+      }
+    ]
+  }
+}
