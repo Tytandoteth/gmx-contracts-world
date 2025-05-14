@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-05-12T15:37:22.146Z",
+  "deployer": "0x51e76A6Abd7491d90E1d5CFEaF65422131BcBcfF",
+  "network": "worldchain",
+  "TestToken": {
+    "TUSD": {
+      "address": "0xc99E5FC1A556bD42A6dAff82Fb585814E41431dc",
+      "decimals": 18
+    }
+  },
+  "SimplePriceFeed": "0x7e402dE1894f3dCed30f9bECBc51aD08F2016095",
+  "VaultPriceFeed": null,
+  "Vault": null,
+  "Router": null
+}

@@ -73,7 +73,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       // World Chain explorer (worldscan.org)
-      worldchain: ""
+      worldchain: "BY7PSJ47E1223NWXGXANKBC4YD8S8SBAYU"
     },
     customChains: [
       {
@@ -91,9 +91,12 @@ module.exports = {
       timeout: 120000
     },
     worldchain: {
-      url: WORLDCHAIN_URL,
+      url: "https://sleek-little-leaf.worldchain-mainnet.quiknode.pro/49cff082c3f8db6bc60bd05d7256d2fda94a42cd/",
       chainId: 480,                         // World Chain's correct chainId
-      accounts: [WORLDCHAIN_DEPLOY_KEY] // Use direct key reference
+      accounts: [WORLDCHAIN_DEPLOY_KEY],    // Use direct key reference
+      gas: 5000000,                         // Default gas limit
+      gasPrice: 1000000000,                 // 1 gwei
+      timeout: 120000                       // Longer timeout for World Chain
     },
     hardhat: {
       allowUnlimitedContractSize: true

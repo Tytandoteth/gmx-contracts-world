@@ -16,7 +16,7 @@
   "CustomOrderBook": "0x8179D468fF072B8A9203A293a37ef70EdCA850fc",
   "CustomPositionRouter": "0x566e66c17a6DfE5B0964fA0AFC85cF3cc5963dAF",
   "CustomPositionManager": "0x0AC8566466e68678d2d32F625d2d3CD9e6cf088D",
-  "SimplePriceFeed": "0xf63caB0D3aB8a3593f0Ed6b2a46Cd4dF45E4B05b",
+  "SimplePriceFeed": "0x83c3DA969A59F75D04f2913904002f5bae092431",
   "TestDeployment": {
     "tokens": {
       "TUSD": {
